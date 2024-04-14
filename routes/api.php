@@ -14,4 +14,14 @@ Route::get('/getVisitor', [VisitorController::class, 'GetVisitorDetails']);
 Route::post('/postcontact', [ContactController::class, 'PostContactDetails']);
 
 Route::post('/addProduct', [ProductController::class, 'addProduct']);
+Route::post('/list', [ProductController::class, 'list']);
+Route::get('/list', [ProductController::class, 'list']);
+
+Route::delete('delete/{id}', [ProductController::class, 'delete']);
+Route::get('product/{id}', [ProductController::class, 'getProduct']);
+
+
+// api.php
+Route::put('product/{id}', [ProductController::class, 'update']);
+
 ?>
