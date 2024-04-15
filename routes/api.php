@@ -22,6 +22,8 @@ Route::get('product/{id}', [ProductController::class, 'getProduct']);
 
 
 // api.php
-Route::put('product/{id}', [ProductController::class, 'update']);
+Route::put('update/{id}', [ProductController::class, 'update']);
+Route::get('search/{key}', [ProductController::class, 'search']);
+
 
 ?>

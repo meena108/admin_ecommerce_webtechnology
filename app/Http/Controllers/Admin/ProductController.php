@@ -104,7 +104,11 @@ public function update(Request $request, $id)
     ]);
 }
 
-//pro
+//search function
+public function search($key)
+{
+    return Product::where('name', 'like', "%$key%")->get();
+}
 
 
 
