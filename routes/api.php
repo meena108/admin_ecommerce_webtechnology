@@ -7,6 +7,8 @@ use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\ProductController;
 
 
+
+
 //get visitor
 Route::get('/getVisitor', [VisitorController::class, 'GetVisitorDetails']);
 //contact page router
