@@ -21,10 +21,13 @@ Route::get('/list', [ProductController::class, 'list']);
 
 Route::delete('delete/{id}', [ProductController::class, 'delete']);
 Route::get('product/{id}', [ProductController::class, 'getProduct']);
+Route::get('edit/{id}', [ProductController::class, 'edit']);
+
+// Route::get('update/{id}', [ProductController::class, 'update']);
 
 
 // api.php
-Route::put('update/{id}', [ProductController::class, 'update']);
+Route::patch('update/{id}', [ProductController::class, 'update']);
 Route::get('search/{key}', [ProductController::class, 'search']);
 
 
