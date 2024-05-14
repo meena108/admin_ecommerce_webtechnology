@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 
-class ContactControlller extends Controller
+class ContactController extends Controller
 {
     public function PostContactDetails(Request $request){
 
